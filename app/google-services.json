@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "740853194494",
+    "project_id": "newsexplore-99b87",
+    "storage_bucket": "newsexplore-99b87.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:740853194494:android:e6eae37b1182a5c581cfaf",
+        "android_client_info": {
+          "package_name": "com.example.explore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMZ2fBeiGI5BrXp4IP5_jpK7pNk0BZiqc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".dashboard.fragments.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FCFCFC">
+
+        <LinearLayout
+            android:id="@+id/llIntro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/_15ssp"
+            android:paddingVertical="@dimen/_15ssp">
+
+            <ImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_profile" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome Back !"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Monday, 3 October"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_9ssp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llIntro"
+            android:layout_marginHorizontal="@dimen/_15ssp"
+            android:background="@drawable/bg_edittext"
+            android:backgroundTint="@color/white"
+            android:hint="Search For the Article ..."
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:paddingVertical="@dimen/_14sdp"
+            android:textSize="@dimen/_10ssp" />
+    </RelativeLayout>
+
+</layout>

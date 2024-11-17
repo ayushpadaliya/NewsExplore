@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".dashboard.activity.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_back_btn"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Explorer"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_profile"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDashboardMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/clToolBar"
+            />
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@id/rvBottomNavigation"
+            android:layout_weight="1" />
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/rvBottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:visibility="visible"
+            app:itemBackground="@color/white"
+            app:labelVisibilityMode="unlabeled"
+            app:itemRippleColor="@color/lightBlue"
+            app:itemIconTint="@drawable/bottom_nav_color_selector"
+            app:itemHorizontalTranslationEnabled="false"
+            app:menu="@menu/bottom_navigation"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>
+
